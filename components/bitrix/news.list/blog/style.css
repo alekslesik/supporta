@@ -1,0 +1,214 @@
+.c-news-list.c-news-list-blog .grid-2,
+.c-news-list.c-news-list-blog .big-block.grid-4 {
+    width: 50%;
+}
+.c-news-list.c-news-list-blog .grid-3 {
+    width: 33.333333%;
+}
+.c-news-list.c-news-list-blog .grid-4 {
+    width: 25%;
+}
+.c-news-list.c-news-list-blog .big-block.grid-3 {
+    width: 66.666666%;
+}
+
+.c-news-list.c-news-list-blog .big-block .news-list-element {
+    position: relative;
+}
+.c-news-list.c-news-list-blog .big-block .news-list-element-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: initial;
+}
+.c-news-list.c-news-list-blog .big-block .news-list-element-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 30px 35px;
+    pointer-events: none;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+.c-news-list.c-news-list-blog .big-block .news-list-element-name {
+    max-width: 250px;
+    color: #FFF;
+}
+.c-news-list.c-news-list-blog .big-block .news-list-element-additional {
+    padding-bottom: 0;
+    max-width: 300px;
+    color: #FFF;
+}
+.c-news-list.c-news-list-blog .big-block .news-list-element-tag {
+    pointer-events: initial;
+    margin-bottom: 5px;
+}
+
+.c-news-list.c-news-list-blog .news-list-content {
+    font-size: 0;
+    margin: -10px;
+    min-width: 20px;
+    min-height: 20px;
+    text-align: left;
+}
+.c-news-list.c-news-list-blog .news-list-element-wrap {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.c-news-list.c-news-list-blog .news-list-element {
+    height: 395px;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.c-news-list.c-news-list-blog .news-list-element.with-description {
+    height: 470px;
+}
+.c-news-list.c-news-list-blog .news-list-element:hover {
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+}
+.c-news-list.c-news-list-blog .news-list-element-image {
+    display: block;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c-news-list.c-news-list-blog .news-list-element-content {
+    margin: 20px 25px 25px 25px;
+    overflow: hidden;
+}
+.c-news-list.c-news-list-blog .news-list-element-name {
+    font-size: 17px;
+    line-height: 24px;
+    max-height: 72px;
+    overflow: hidden;
+}
+.c-news-list.c-news-list-blog .news-list-element-name a {
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+}
+.c-news-list.c-news-list-blog .news-list-element-additional {
+    padding-bottom: 20px;
+}
+.c-news-list.c-news-list-blog .news-list-element-tags {
+    font-size: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+.c-news-list.c-news-list-blog .news-list-element-tags.in-block {
+    display: block;
+    height: 16px;
+    overflow: hidden;
+}
+.c-news-list.c-news-list-blog .news-list-element-tags.in-line {
+    display: inline-block;
+    vertical-align: top;
+}
+.c-news-list.c-news-list-blog .news-list-element-tag {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 12px;
+    margin-right: 10px;
+}
+.c-news-list.c-news-list-blog .news-list-element-tag-button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.c-news-list.c-news-list-blog .news-list-element-tag-button:focus {
+    outline: none;
+}
+.c-news-list.c-news-list-blog .news-list-element-tag-button:hover {
+    color: #FFF;
+}
+.c-news-list.c-news-list-blog .news-list-element-tag-button.active {
+    color: #FFF;
+}
+.c-news-list.c-news-list-blog .news-list-element-date {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 2px;
+    margin-top: 10px;
+}
+.c-news-list.c-news-list-blog .news-list-element-date.in-block {
+    display: block;
+}
+.c-news-list.c-news-list-blog .news-list-element-date.in-line {
+    display: inline-block;
+}
+.c-news-list.c-news-list-blog .news-list-element-description {
+    font-size: 14px;
+    line-height: 22px;
+    max-height: 88px;
+    overflow: hidden;
+}
+
+@media all and (max-width: 1000px) {
+    .c-news-list.c-news-list-blog .big-block.grid-4 {
+        width: 66.666666%;
+    }
+    .c-news-list.c-news-list-blog .grid-4 {
+        width: 33.333333%;
+    }
+}
+@media all and (max-width: 720px) {
+    .c-news-list.c-news-list-blog .big-block.grid-4,
+    .c-news-list.c-news-list-blog .big-block.grid-3 {
+        width: 100%;
+    }
+    .c-news-list.c-news-list-blog .grid-3,
+    .c-news-list.c-news-list-blog .grid-4 {
+        width: 50%;
+    }
+}
+@media all and (max-width: 500px) {
+    .c-news-list.c-news-list-blog .grid-2,
+    .c-news-list.c-news-list-blog .grid-3,
+    .c-news-list.c-news-list-blog .grid-4 {
+        width: 100%;
+    }
+    .c-news-list.c-news-list-blog .big-block.grid-3 .news-list-element,
+    .c-news-list.c-news-list-blog .big-block.grid-4 .news-list-element {
+        height: 350px;
+    }
+    .c-news-list.c-news-list-blog .grid-2 .news-list-element,
+    .c-news-list.c-news-list-blog .grid-3 .news-list-element,
+    .c-news-list.c-news-list-blog .grid-4 .news-list-element {
+        height: initial;
+    }
+}

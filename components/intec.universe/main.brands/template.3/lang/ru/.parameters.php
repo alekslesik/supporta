@@ -1,0 +1,35 @@
+<?php
+
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_LINK_USE'] = 'Использовать ссылки на элементах';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_LINK_BLANK'] = 'Открывать ссылки в новой вкладке';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_LINE_COUNT'] = 'Количество элементов в строке';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_ALIGNMENT'] = 'Выравнивание элементов в строке';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_ALIGNMENT_LEFT'] = 'Слева';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_ALIGNMENT_CENTER'] = 'По центру';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_ALIGNMENT_RIGHT'] = 'Справа';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_EFFECT'] = 'Эффект элементов';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_EFFECT_NONE'] = 'Нет';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_EFFECT_BLUR'] = 'Размытие';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_EFFECT_BRIGHTNESS'] = 'Яркость';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_EFFECT_GRAYSCALE'] = 'Черно-белый';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_EFFECT_SEPIA'] = 'Сепия';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_EFFECT_ZOOM'] = 'Увеличение';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_TRANSPARENCY'] = 'Прозрачность элементов (%)';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_SLIDER_USE'] = 'Использовать слайдер';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_SLIDER_NAVIGATION'] = 'Слайдер. Показывать навигационные стрелки';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_SLIDER_DOTS'] = 'Слайдер. Показывать навигационные точки';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_SLIDER_LOOP'] = 'Слайдер. Зациклить прокрутку';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_SLIDER_AUTO_USE'] = 'Слайдер. Использовать автопрокрутку';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_SLIDER_AUTO_PAUSE'] = 'Слайдер. Останавливать автопрокрутку при наведении курсора мыши';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_SLIDER_AUTO_SPEED'] = 'Слайдер. Скорость анимации смены слайда при автопрокрутке (мс)';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_SLIDER_AUTO_TIME'] = 'Слайдер. Время задержки перед сменой слайда при автопрокрутке (мс)';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_BACKGROUND_USE'] = 'Использовать задний фон';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_BACKGROUND_THEME'] = 'Задний фон. Цвет заливки';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_FOOTER_SHOW'] = 'Отображать нижний блок';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_FOOTER_POSITION'] = 'Расположение нижнего блока';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_FOOTER_BUTTON_SHOW'] = 'Отображать кнопку "Показать все"';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_FOOTER_BUTTON_TEXT'] = 'Текст кнопки "Показать все"';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_FOOTER_BUTTON_TEXT_DEFAULT'] = 'Показать все';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_POSITION_LEFT'] = 'Слева';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_POSITION_CENTER'] = 'По центру';
+$MESS['C_MAIN_BRANDS_TEMPLATE_3_POSITION_RIGHT'] = 'Справа';

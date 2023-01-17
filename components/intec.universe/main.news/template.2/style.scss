@@ -1,0 +1,170 @@
+$component: 'news';
+$template: 'template-2';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-content {
+    position: relative;
+    margin: 0 40px;
+
+    .#{$item}-wrap {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .#{$item} {
+      position: relative;
+      overflow: hidden;
+      display: block;
+    }
+    .#{$item}-picture {
+      display: block;
+      height: 100px;
+      width: 100px;
+      border-radius: 3px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .#{$item}-text {
+      padding: 0 20px;
+      padding-bottom: 30px;
+      position: relative;
+      min-height: 100px;
+      overflow: hidden;
+    }
+    .#{$item}-name {
+      max-height: 60px;
+      overflow: hidden;
+    }
+    .#{$item}-name-wrapper {
+      font-size: 14px;
+      color: #353639;
+      line-height: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      @include transition(color, 0.3s);
+    }
+    .#{$item}-description {
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      color: #353639;
+      font-size: 13px;
+      line-height: 16px;
+      max-height: 48px;
+      overflow: hidden;
+    }
+    .#{$item}-date {
+      overflow: hidden;
+      display: block;
+      height: 15px;
+      font-size: 12px;
+      line-height: 15px;
+      color: #898989;
+      text-align: left;
+      position: absolute;
+      bottom: 15px;
+    }
+
+
+    .widget-navigation {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: -40px;
+      right: -40px;
+      font-size: 0;
+    }
+    .widget-navigation-wrapper {
+      font-size: 14px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+    }
+    .widget-navigation-wrapper i {
+      font-size: 12px;
+      color: #abaaaa;
+    }
+    .widget-navigation-previous,
+    .widget-navigation-next {
+      font-size: 14px;
+      cursor: pointer;
+      @include transition(color, 0.3s);
+    }
+    .widget-navigation-previous {
+      float: left;
+    }
+    .widget-navigation-next {
+      float: right;
+    }
+
+    .widget-dots {
+      display: none;
+      font-size: 0;
+      text-align: center;
+
+      &.disabled {
+        opacity: 0;
+      }
+      .owl-dot {
+        display: inline-block;
+        vertical-align: middle;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #bcbcbc;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 10px;
+      }
+      .owl-dot.active {
+        background: #3e6af8;
+        border-color: #3e6af8;
+      }
+    }
+
+  }
+
+  .widget-footer {}
+
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+
+  @media all and (max-width: 1200px) {
+
+  }
+  @media all and (max-width: 768px) {
+
+  }
+  @media all and (max-width: 400px) {
+    .#{$item}-picture-wrap {
+      display: none;
+    }
+    .#{$item}-text {
+      padding: 15px;
+    }
+    .#{$item}-date {
+      bottom: 0;
+    }
+  }
+}

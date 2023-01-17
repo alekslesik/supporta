@@ -1,0 +1,165 @@
+.ns-intec-regionality.c-regions-select.c-regions-select-default {
+  display: inline-block;
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-region {
+  display: block;
+  cursor: pointer;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-region:hover {
+  color: #868686;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-region-icon {
+  font-size: 0.8em;
+  line-height: 1;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-dialog {
+  display: none;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question {
+  display: block;
+  position: fixed;
+  background-color: #2ab96d;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 20px;
+  z-index: 10;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question-text {
+  display: block;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question-button {
+  display: block;
+  font-size: 12px;
+  padding: 3px 15px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 14px;
+  outline: none;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+  -webkit-transition-property: background-color, color;
+  -moz-transition-property: background-color, color;
+  -ms-transition-property: background-color, color;
+  -o-transition-property: background-color, color;
+  transition-property: background-color, color;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question-button:hover {
+  background-color: #fff;
+  color: #2ab96d;
+}
+
+.regions-select-popup.regions-select-popup-default {
+  color: #2d2d2d;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-window {
+  display: block;
+  position: relative;
+  color: #2d2d2d;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  background-color: #fff;
+  min-width: 400px;
+  max-width: 500px;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-window-content {
+  display: block;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-search {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-auto {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 14px 20px 14px;
+  cursor: pointer;
+  border-bottom: 1px dashed #2d2d2d;
+  -webkit-transition-property: color, border-color;
+  -moz-transition-property: color, border-color;
+  -ms-transition-property: color, border-color;
+  -o-transition-property: color, border-color;
+  transition-property: color, border-color;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-auto:hover {
+  color: #0065ff;
+  border-color: #0065ff;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-regions {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 175px;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-region {
+  display: block;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-region .regions-select-dialog-region-selector {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-region .regions-select-dialog-region-selector:hover {
+  background-color: #f7f7f7;
+  color: #0065ff;
+}
+@media all and (max-width: 500px) {
+  .regions-select-popup.regions-select-popup-default .regions-select-dialog-window {
+    min-width: 260px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

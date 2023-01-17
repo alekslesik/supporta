@@ -1,0 +1,467 @@
+$namespace: 'bitrix';
+$component: 'menu';
+$template: 'popup-3';
+$class: #{$component};
+$themes: (
+        'light' : #1d1d1d,
+        'dark' : #e2e2e2
+);
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-button {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    color: #1d1d1d;
+    line-height: 1;
+    cursor: pointer;
+
+    -webkit-transition: color 350ms;
+    -moz-transition: color 350ms;
+    -ms-transition: color 350ms;
+    -o-transition: color 350ms;
+    transition: color 350ms;
+
+    &:hover {
+      color: #0065ff;
+    }
+  }
+
+  .#{$class} {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    z-index: 1;
+
+    &.background-image {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &-wrapper,
+    &-wrapper-2 {
+      display: block;
+      position: relative;
+      height: 100%;
+    }
+
+    &-panel {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 86px;
+      z-index: 1;
+
+      &-wrapper {
+        height: 100%;
+      }
+
+      &-button-wrap {
+        min-width: 38px;
+      }
+
+      &-button {
+        width: 18px;
+        font-size: 18px;
+        line-height: 1;
+        cursor: pointer;
+
+        -webkit-transition: color 350ms;
+        -moz-transition: color 350ms;
+        -ms-transition: color 350ms;
+        -o-transition: color 350ms;
+        transition: color 350ms;
+
+        &:hover {
+          color: #0065ff;
+        }
+      }
+
+      &-logotype {
+        display: inline-block;
+        vertical-align: middle;
+        width: 130px;
+        text-decoration: none;
+
+        svg {
+          max-height: 50px;
+        }
+
+        &-wrap {
+          text-align: center;
+        }
+      }
+    }
+
+    &-content {
+      display: block;
+      height: 100%;
+      padding-top: 86px;
+      z-index: 0;
+
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      &-wrapper {
+        padding: 40px 0;
+        height: 100%;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      &-items-wrapper:not(:only-child) .scroll-element.scroll-y {
+        right: 20px;
+      }
+
+      &-items-wrapper-2 {
+        overflow: hidden;
+      }
+
+      .#{$class}-item.#{$class}-item-level-0 {
+        margin-bottom: 60px;
+
+        & > .#{$class}-item-name {
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: bold;
+          margin-bottom: 16px;
+
+          -webkit-transition: color 350ms;
+          -moz-transition: color 350ms;
+          -ms-transition: color 350ms;
+          -o-transition: color 350ms;
+          transition: color 350ms;
+
+          &:hover {
+            color: #0065ff;
+          }
+        }
+
+        & > .#{$class}-item-items {
+          display: block;
+          margin-top: 16px;
+        }
+      }
+
+      .#{$class}-item.#{$class}-item-level-1 {
+        margin-top: 5px;
+
+        & > .#{$class}-item-content {
+          .#{$class}-item-name {
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 26px;
+            font-weight: normal;
+            word-break: break-all;
+
+            -webkit-transition: color 350ms;
+            -moz-transition: color 350ms;
+            -ms-transition: color 350ms;
+            -o-transition: color 350ms;
+            transition: color 350ms;
+
+            &:hover {
+              color: #0065ff;
+            }
+          }
+
+          .#{$class}-item-icon {
+            font-size: 16px;
+            line-height: 1;
+            height: 16px;
+            width: 16px;
+            text-align: center;
+            cursor: pointer;
+
+            -webkit-transition-duration: 350ms;
+            -moz-transition-duration: 350ms;
+            -ms-transition-duration: 350ms;
+            -o-transition-duration: 350ms;
+            transition-duration: 350ms;
+
+            -webkit-transition-property: color, background, transform;
+            -moz-transition-property: color, background, transform;
+            -ms-transition-property: color, background, transform;
+            -o-transition-property: color, background, transform;
+            transition-property: color, background, transform;
+
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+
+            &:hover {
+              background: #0065ff;
+            }
+          }
+        }
+
+        & > .#{$class}-item-items {
+          display: block;
+          height: 0;
+          padding-left: 15px;
+          overflow: hidden;
+
+          -webkit-transition-duration: 350ms;
+          -moz-transition-duration: 350ms;
+          -ms-transition-duration: 350ms;
+          -o-transition-duration: 350ms;
+          transition-duration: 350ms;
+
+          -webkit-transition-property: padding;
+          -moz-transition-property: padding;
+          -ms-transition-property: padding;
+          -o-transition-property: padding;
+          transition-property: padding;
+
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        &[data-expanded="true"] {
+          & > .#{$class}-item-content {
+            .#{$class}-item-icon {
+              -webkit-transform: rotate(180deg);
+              -moz-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              -o-transform: rotate(180deg);
+              transform: rotate(180deg);
+            }
+          }
+
+          & > .#{$class}-item-items {
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+        }
+      }
+
+      .#{$class}-item.#{$class}-item-level-2 {
+        & > .#{$class}-item-name {
+          text-decoration: none;
+          font-size: 12px;
+          line-height: 21px;
+          font-weight: normal;
+
+          -webkit-transition: color 350ms;
+          -moz-transition: color 350ms;
+          -ms-transition: color 350ms;
+          -o-transition: color 350ms;
+          transition: color 350ms;
+
+          &:hover {
+            color: #0065ff;
+          }
+        }
+      }
+
+      &-contacts-wrap {
+        padding: 0 10px;
+      }
+
+      &-contacts-title {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+        margin-bottom: 16px;
+
+        -webkit-transition: color 350ms;
+        -moz-transition: color 350ms;
+        -ms-transition: color 350ms;
+        -o-transition: color 350ms;
+        transition: color 350ms;
+      }
+
+      &-contacts-items {
+        margin-top: 16px;
+      }
+
+      &-contacts-name {
+        font-size: 16px;
+      }
+
+      &-contacts-address, &-contacts-time {
+        margin-top: 9px;
+        font-size: 14px;
+      }
+
+      &-contacts-phone {
+        display: block;
+        margin-top: 9px;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      &-contacts-mail {
+        display: block;
+        margin-top: 6px;
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      &-contacts-button {
+        display: inline-block;
+        padding: 10px 30px;
+        margin: 15px 6px 0 6px;
+        border: 1px #B6B6B6 solid;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+
+        -webkit-transition: color 350ms, background-color 350ms, border-color 350ms;
+        -moz-transition: color 350ms, background-color 350ms, border-color 350ms;
+        -ms-transition: color 350ms, background-color 350ms, border-color 350ms;
+        -o-transition: color 350ms, background-color 350ms, border-color 350ms;
+        transition: color 350ms, background-color 350ms, border-color 350ms;
+
+        &:hover {
+          border-color: transparent;
+        }
+      }
+
+      &-contacts + .#{$class}-content-social {
+        margin-top: 30px;
+      }
+
+      &-social-title {
+        font-size: 16px;
+      }
+
+      &-social-icons {
+        margin-top: 7px;
+      }
+
+      &-social-icon {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: box-shadow 350ms;
+      }
+    }
+  }
+
+  &[data-theme=light] .#{$class} {
+    &-panel-button {
+      color: #1d1d1d;
+    }
+
+    &-panel-logotype {
+      color: #1d1d1d;
+    }
+
+    .#{$class}-item.#{$class}-item-level-0 > .#{$class}-item-name {
+      color: #1d1d1d;
+    }
+
+    .#{$class}-item.#{$class}-item-level-1 > .#{$class}-item-content {
+      .#{$class}-item-name {
+        color: #333333;
+      }
+
+      .#{$class}-item-icon {
+        color: #1d1d1d;
+
+        &:hover {
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    .#{$class}-item.#{$class}-item-level-2 > .#{$class}-item-name {
+      color: #1d1d1d;
+    }
+
+    &-content-contacts {
+      &-title, &-name, &-phone, &-button {
+        color: #1d1d1d;
+      }
+
+      &-button:hover {
+        color: #FFF;
+      }
+
+      &-mail {
+        color: #333333;
+      }
+
+      &-address, &-time {
+        color: #666666;
+      }
+    }
+
+    &-content-social-title {
+      color: #666666;
+    }
+  }
+
+  &[data-theme=dark] .#{$class} {
+    &-panel-button {
+      color: #e2e2e2;
+    }
+
+    &-panel-logotype {
+      color: #e2e2e2;
+
+      & svg path {
+        fill: #e2e2e2 !important;
+        background-color: #e2e2e2 !important;
+      }
+    }
+
+    .#{$class}-item.#{$class}-item-level-0 > .#{$class}-item-name {
+      color: #e2e2e2;
+    }
+
+    .#{$class}-item.#{$class}-item-level-1 > .#{$class}-item-content {
+      .#{$class}-item-name {
+        color: #e2e2e2;
+      }
+
+      .#{$class}-item-icon {
+        color: #e2e2e2;
+
+        &:hover {
+          color: #e2e2e2;
+        }
+      }
+    }
+
+    .#{$class}-item.#{$class}-item-level-2 > .#{$class}-item-name {
+      color: #e2e2e2;
+    }
+
+    &-content-contacts {
+      &-title, &-name, &-phone, &-button, &-mail, &-address, &-time {
+        color: #e2e2e2;
+      }
+
+      &-button:hover {
+        color: #e2e2e2;
+      }
+    }
+
+    &-content-social-title {
+      color: #e2e2e2;
+    }
+  }
+}

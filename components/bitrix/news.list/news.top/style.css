@@ -1,0 +1,84 @@
+.c-news-list.c-news-list-news-top {
+    border: 1px solid #e8e8e8;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.c-news-list.c-news-list-news-top .news-list-header {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px 25px 0 25px;
+}
+.c-news-list.c-news-list-news-top .news-list-element-wrap {
+    padding: 0 25px 25px 25px;
+}
+.c-news-list.c-news-list-news-top .news-list-element {
+    padding-top: 25px;
+    border-top: 1px solid #e8e8e8;
+}
+.c-news-list.c-news-list-news-top .news-list-element-wrap:first-child .news-list-element {
+    border-top: none;
+}
+.c-news-list.c-news-list-news-top .news-list-element-name {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    text-decoration: none;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+}.c-news-list.c-news-list-news-top .news-list-element-additional {
+    margin-top: 5px;
+ }
+.c-news-list.c-news-list-news-top .news-list-element-tags {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 5px;
+}
+.c-news-list.c-news-list-news-top .news-list-element-tag {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    height: 16px;
+}
+.c-news-list.c-news-list-news-top .news-list-element-tag-button {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 2px;
+    border: none;
+    background-color: transparent;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.c-news-list.c-news-list-news-top .news-list-element-tag-button.tag-disabled {
+    cursor: default;
+}
+.c-news-list.c-news-list-news-top .news-list-element-tag-button:focus {
+    outline: none;
+}
+.c-news-list.c-news-list-news-top .news-list-element-tag-button:hover {
+    color: #FFF;
+}
+.c-news-list.c-news-list-news-top .news-list-element-tag-button.active {
+    color: #FFF;
+}
+.c-news-list.c-news-list-news-top .news-list-element-date {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 5px;
+}

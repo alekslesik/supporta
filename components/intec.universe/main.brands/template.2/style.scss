@@ -1,0 +1,82 @@
+$component: 'brands';
+$template: 'template-2';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-wrapper {
+    padding: 60px 40px;
+  }
+  .#{$item}-picture {
+    padding-top: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include transition(#{opacity, filter}, 0.4s);
+
+    &:hover {
+      opacity: 1!important;
+    }
+  }
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+  &[data-background='true'] {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  &[data-theme='light'] {
+    background-color: #f8f9fb;
+  }
+  &[data-theme='dark'] {
+    background-color: #000;
+
+    .widget-title,
+    .widget-description{
+      color: #fff !important;
+    }
+    .widget-footer-button {
+      color: #fff !important;
+    }
+  }
+  &[data-filter='true'] {
+    .#{$item}-picture {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+
+      &:hover {
+        -webkit-filter:none;
+        filter: none;
+      }
+    }
+  }
+  .widget-footer {}
+  @media all and (max-width: 1024px) {
+    .#{$item}-wrapper {
+      padding: 20px;
+    }
+  }
+  @media all and (max-width: 600px) {
+    .#{$item}-wrapper {
+      padding: 10px;
+    }
+  }
+}
