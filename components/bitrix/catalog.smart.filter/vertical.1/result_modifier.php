@@ -74,3 +74,17 @@ if ($arResult['VISUAL']['COLLAPSED'])
             $arResult['VISUAL']['COLLAPSED'] = false;
             break;
         }
+
+if (!$arResult['VISUAL']['MOBILE'])
+{
+	$page = $APPLICATION->GetCurPage();
+	$findme   = '/filter/';
+	$pos = strpos($page, $findme);
+	if ($pos === false) {
+		$arResult['VISUAL']['COLLAPSED'] = true;
+	} else {
+		$arResult['VISUAL']['COLLAPSED'] = false;
+	}
+
+	
+}

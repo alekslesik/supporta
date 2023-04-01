@@ -48,10 +48,17 @@ $getMapCoordinates = function ($arItem) use ($arParams) {
             <div class="news-list-items">
                <?php include(__DIR__.'/parts/items.php') ?>
             </div>
+			<div class="rekviz">
+				<p><b>Индивидуальный предприниматель Кутилин Михаил Юрьевич</b></p>
+				<p><b>ОГРНИП: 317774600000122</b></p>
+				<p><b>ИНН : 772326427740</b></p>
+			</div>
          </div>
+		
       </div>
    </div>
    <br>
+    
     <div class="news-list-maps-wrap">
         <div class="news-list-short-items-wrap">
             <div class="intec-content intec-content-visible">

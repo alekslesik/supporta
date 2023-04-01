@@ -62,7 +62,7 @@ if ($arColumns['SHOW']) {
     <?php if ($arElement['SHOW']) { ?>
         <?php $APPLICATION->IncludeComponent(
             'bitrix:catalog.element',
-            $arElement['TEMPLATE'],
+            'catalog.default.detail',  
             $arElement['PARAMETERS'],
             $component
         ) ?>

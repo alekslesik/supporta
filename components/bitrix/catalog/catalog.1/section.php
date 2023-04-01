@@ -104,14 +104,7 @@ if ($arColumns['SHOW']) {
             ]) ?>
                 <?php if ($arColumns['SHOW']) { ?>
                     <div class="catalog-content-left intec-content-left">
-                        <?php if ($arFilter['SHOW'] && $arFilter['TYPE'] === 'vertical') { ?>
-                                <?php $APPLICATION->IncludeComponent(
-                                    'bitrix:catalog.smart.filter',
-                                    $arFilter['TEMPLATE'],
-                                    $arFilter['PARAMETERS'],
-                                    $component
-                                ) ?>
-                        <?php } ?>
+                       
                         <?php if ($arMenu['SHOW']) { ?>
                             <div class="catalog-menu">
                                 <?php $APPLICATION->IncludeComponent(
@@ -121,6 +114,15 @@ if ($arColumns['SHOW']) {
                                     $component
                                 ) ?>
                             </div>
+                        <?php } ?>
+						<br>
+						 <?php if ($arFilter['SHOW'] && $arFilter['TYPE'] === 'vertical') { ?>
+                                <?php $APPLICATION->IncludeComponent(
+                                    'bitrix:catalog.smart.filter',
+                                    $arFilter['TEMPLATE'],
+                                    $arFilter['PARAMETERS'],
+                                    $component
+                                ) ?>
                         <?php } ?>
                     </div>
                     <div class="catalog-content-right intec-content-right">
