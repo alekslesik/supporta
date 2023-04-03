@@ -184,7 +184,7 @@ $bErrorInput = $arResult['ERROR']['CODE'] == 5;
                                 'widget-form-result-new-submit',
                                 'intec-cl-background-light',
                                 'intec-cl-background-dark-hover'
-                            ]
+                            ],
                         ]) ?>
                     </div>
                 <?= Html::endForm() ?>

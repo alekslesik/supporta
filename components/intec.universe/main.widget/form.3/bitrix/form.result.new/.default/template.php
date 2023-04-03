@@ -138,7 +138,8 @@ $sReqSign = ' *';
                                 'class' => [
                                     'widget-form-result-new-submit',
                                     'intec-cl-background-dark-hover'
-                                ]
+                                ],
+                                'onclick' => "ym(11884189,'reachGoal','askQuestionRed')",
                             ]) ?>
                         </div>
                     </div>

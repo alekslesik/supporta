@@ -159,7 +159,7 @@ $sReqSign = ' *';
                             'widget-form-result-new-submit',
                             'intec-cl-background-light',
                             'intec-cl-background-dark-hover'
-                        ]
+                        ],
                     ]) ?>
                 </div>
             <?= $arResult['FORM_FOOTER'] ?>

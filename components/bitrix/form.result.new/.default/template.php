@@ -101,6 +101,7 @@ $sTemplateId = Html::getUniqueId(null, Component::getUniqueId($this));
                             ],
                             'name' => 'web_form_submit',
                             'value' => 'Y',
+                            'onclick' => "ym(11884189,'reachGoal','headerButton')",
                             'disabled' => Type::toInteger($arResult['F_RIGHT']) < 10 ? 'disabled' : null
                         ]) ?>
                     </div>

@@ -1,0 +1,16 @@
+{
+    "deploy": {
+        "targets": [
+            {
+                "type": "ftp",
+                "name": "supporta",
+                "description": "supporta",
+
+                "dir": "/local/templates/digital_s1",
+                "host": "udarnik.devbx.ru", "port": 21,
+                "secure": false,
+                "user": "udarnick", "password": ""
+            }
+        ]
+    }
+}

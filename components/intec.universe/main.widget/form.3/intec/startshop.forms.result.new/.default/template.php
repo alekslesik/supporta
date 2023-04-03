@@ -164,6 +164,7 @@ $bErrorInput = $arResult['ERROR']['CODE'] == 5;
                                         'intec-cl-background-light',
                                         'intec-cl-background-dark-hover'
                                     ]
+                                    
                                 ]) ?>
                             </div>
                         </div>
